@@ -1,0 +1,213 @@
+
+body {
+
+    main {
+
+        .divider {
+            width: 100vw;
+            height: 150px;
+            background-color: linear-gradient(91deg, #DFF3FE 25.23%, rgba(0, 165, 255, 0.00) 106%);;
+            .about-title, .contact-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    font-size: 110px;
+                    font-family: 'Sansita';
+                    color: black;
+                }
+            }
+        }
+
+        .home-bg, .about-bg, .contact-bg{
+            background-color: black;
+            height: 110vh;
+            width: 100vw;
+            opacity: 0.35;
+        }
+
+        .home-wrap {
+            position: relative;
+            height: 110vh;
+            width: 100vw;
+            background-size: 100vw ;
+            background-image: url(../images/home-bg-1.png);
+            background-repeat: no-repeat;
+
+            .home-content {
+                position: absolute;
+                color: white;
+                font-family: 'Sansita';
+                z-index: 1;
+                .home-title {
+                    display: flex;
+                    justify-content: center;
+                    h1 {
+                        font-size: 100px;
+                        text-decoration-line: underline;
+                    }
+                    h2 {
+                        font-size: 39px;
+                        margin-top: -20px;
+                    }
+                }
+                .slogan {
+                    .row {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 80px 50px;
+                        .title {
+                            h2 {
+                                font-size: 56px;
+                            }
+                            p {
+                                font-size: 41px;
+                            }
+                        }
+                        .slogan-ct {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .slogan-with-caption {
+                                height: 530px;
+                                width: 314px;
+                                background-color: #DFF3FE;
+                                border: 3px solid #DFF3FE;
+                                border-radius: 10px;
+                                color: black;
+                                font-size: 14px;
+                                font-family: 'Jockey One';
+                                span {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about-wrap {
+            position: relative;
+            height: 110vh;
+            width: 100vw;
+            background-size: 100vw ;
+            background-image: url(../images/about-bg.png);
+            background-repeat: no-repeat;
+            .about-content {
+                position: absolute;
+                z-index: 1;
+                .about-info {
+                    font-family: 'Jockey One';
+                    width: 100vw;
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 10px 0;
+                        .col1{
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            padding: 0;
+                            .img-with-caption {
+                                width: 630px;
+                                border-radius: 16px;
+                                background: rgba(223, 243, 254, 0.90);
+                                padding: 10px;
+                                span {
+                                    float: right;
+                                }
+                            }
+                        }
+                        .col3 {
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                        .col4 {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            padding: 0;
+                            .img-with-caption {
+                                width: 630px;
+                                border-radius: 16px;
+                                background: rgba(223, 243, 254, 0.90);
+                                padding: 10px;
+                                span {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .contact-wrap {
+            position: relative;
+            height: 110vh;
+            width: 100vw;
+            background-size: 100vw ;
+            background-image: url(../images/home-bg.png);
+            background-repeat: no-repeat;
+            .contact-content {
+                position: absolute;
+                z-index: 1;
+                width: 100vw;
+                margin-top: 180px;
+                .contact-info {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .feedback {
+                        background-color: #DFF3FE;
+                        border-radius: 16px;
+                        padding: 10px 0;
+                        font-family: 'Sansita';
+                        text-align: center;
+                        .email, .message, .send {
+                            display: flex; justify-content: center;
+                            .mail, .msg {
+                                width: 95%;
+                                border-radius: 16px;
+                                border: 1px solid gray;
+                                margin: 5px 0;
+                            }
+                        }
+                        .mail {
+                            height: 30px;
+                        }
+                        .message {
+                            height: 200px;
+                        }
+                        .send {
+                            input {
+                                border: none;
+                                background-color: rgba(86, 179, 230, 0.90);
+                                border-radius: 20px;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                    .email, .phone, .location {
+                        background-color: #DFF3FE;
+                        margin: 5px 0;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 16px;
+                        span {
+                            margin-left: 50px;
+                        }
+                    }
+                    .map {
+                        img {
+
+                            height: 550px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,269 @@
+
+body {
+    main {
+
+        .products-bg {
+            background-color: black;
+            height: 150vh;
+            width: 100vw;
+            opacity: 0.35;
+        }
+        
+        section {
+            background: url(../images/products-bg.png);
+            position: relative;
+            height: 110vh;
+            width: 100vw;
+            background-size: 100vw ;
+            background-repeat: no-repeat;
+
+            // products
+            .products-container {
+                position: absolute;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+                text-align: center;
+            }
+            .product-content {
+                h2 {
+                    font-family: "Sansita";
+                    font-size: 110px;
+                    color: black;
+                    text-decoration: underline;
+                }
+                .unclickable-btn {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        text-decoration: none;
+                    }
+                    .pre-made, .custom {
+                        padding: 25px 200px;
+                        margin: 0 5px;
+                        span {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    .pre-made-02, .custom-02 {
+                        padding: 25px 207px;
+                        margin: 0 5px;
+                        span {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    .pre-made {
+                        border-radius: 16px 0px 0px 0px;
+                        background: #B6E5FF;
+                    }
+                    .custom {
+                        border-radius: 0px 16px 16px 0px;
+                        background: #DFF3FE;
+                        &:hover {
+                            background-color: rgba(175, 218, 241, 0.9);
+                        }
+                    }
+                    .pre-made-02 {
+                        border-radius: 16px 0px 0px 16px;
+                        background: #DFF3FE;
+                        &:hover {
+                            background-color: rgba(175, 218, 241, 0.9);
+                        }
+                    }
+                    .custom-02 {
+                        border-radius: 0px 16px 0px 0px;
+                        background: #B6E5FF;
+                    }
+                    span {
+                        font-family: "Sansita";
+                        font-size: 40px;
+                    }
+                }
+                .bro {
+                    width: 708px;
+                    height: 15px;
+                    margin-left: 5px;
+                    background-color: #B6E5FF;
+                }
+                .bro-02 {
+                    width: 655px;
+                    height: 15px;
+                    margin-left: 5px;
+                    background-color: #B6E5FF;
+                    margin-left: 737px;
+                }
+                .designs {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 5px;
+                    background: #B6E5FF;
+                    padding: 40px;
+                    .design-cont {
+                        .row {
+                            margin: 25px 0;
+
+                            a {
+                            text-decoration: none;
+                            color: black;
+                            .design-1, .design-2, .design-3, .design-4 {
+                                padding-bottom: 10px;
+                                border-radius: 16px;
+                                background-color: rgba(86, 179, 230, 0.90);
+                                transition: 0.3s;
+                                    &:hover {
+                                        background-color: rgba(30, 157, 226, 0.9);
+                                        border: 1px solid black;
+                                        margin: -1px;
+                                    }
+                                    span {
+                                        font-size: 40px;
+                                        font-family: 'Sansita';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .upload-custom-design {
+                    width: 1387px;
+                    margin: 0 5px;
+                    background: #B6E5FF;
+                    padding: 40px;
+                    font-family: 'Sansita';
+                    h3 {
+                        font-size: 40px;
+                        margin-bottom: 30px;
+                        font-weight: bolder;
+                    }
+                    .btns {
+                        margin-top: 100px;
+                        button {
+                            border: 1px solid black;
+                            border-radius: 16px;
+                            background-color: rgba(86, 179, 230, 0.90);
+                            margin: 5px 0;
+                            padding: 10px;
+                            width: 90%;
+                            font-size: 23px;
+                            span {
+                                margin-right: 30px;
+                            }
+                            a {
+                                color: black;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .front-design, .back-design {
+                        background-color: rgba(86, 179, 230, 0.90);
+                        padding-bottom: 30px;
+                        h4 {
+                            font-size: 40px;
+                        }
+                        img {
+                            border: 2px solid black;
+                            border-radius: 16px;
+                        }
+                    }
+                    .front-design {
+                        border-radius: 16px 0 0 16px;
+                    }
+                    .back-design {
+                        border-radius: 0 16px 16px 0;
+                    }
+                }
+            }
+
+            // payment
+            .payment-container {
+                position: absolute;
+                z-index: 1;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                .payment-content {
+                    margin: 100px 0;
+                    font-family: 'Sansita';
+                    width: 1270px;
+                    h1 {
+                        text-align: center;
+                        background-color: #B6E5FF;
+                        padding: 10px;
+                        border-radius: 16px;
+                        font-size: 70px;
+                    }
+                    .payment-info {
+                        background-color: #B6E5FF;
+                        padding: 40px;
+                        border-radius: 16px;
+                        p {
+                            text-align: center;
+                            font-size: 33px;
+                            margin-bottom: 30px;
+                            span {
+                                color: red;
+                            }
+                        }
+                        .payment-method {
+                            text-align: center;
+                            button {
+                                margin-top: 30px;
+                                font-size: 33px;
+                                padding: 10px 30px;
+                                border: 1px solid black;
+                                border-radius: 15px;
+                                background-color: rgba(86, 179, 230, 0.90);
+                            }
+                        }
+                        .payment-design {
+                            text-align: center;
+                            background-color: rgba(86, 179, 230, 0.90);
+                            padding: 20px;
+                            border-radius: 16px;
+                            border: 2px solid black;
+                            h3 {
+                                font-size: 40px;
+                            }
+                        }
+                        .gcash-logo {
+                            display: flex;
+                            justify-content: center;
+                            margin: 0 0 20px;
+                        }
+                        .gcash-info {
+                            text-align: center;
+                            background-color: rgba(86, 179, 230, 0.90);
+                            border-radius: 16px;
+                            padding: 10px 10px 20px;
+                            p {
+                                margin: 0;
+                            }
+                            input {
+                                padding: 10px;
+                                width: 90%;
+                                border-radius: 16px;
+                                border: 1px solid black;
+                            }
+                            .gcash-btns {
+                                margin-top: 20px;
+                                button {
+                                    font-size: 20px;
+                                    padding: 5px 10px;
+                                    background-color: #B6E5FF;
+                                    border: 1px solid black;
+                                    border-radius: 16px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }       
+
+    }
+}
